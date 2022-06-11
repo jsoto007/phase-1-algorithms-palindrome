@@ -1,9 +1,20 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const reverse = function (string) {
+    return string.split("").reverse().join("");
+  }
+  if (word === reverse(word)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /* 
   Add your pseudocode here
+  will take in a string 
+  will strickly compare that input with the same but rever. 
+  will return a bloolean
 */
 
 /*
